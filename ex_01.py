@@ -24,17 +24,16 @@ while True:
         assert age >= 0
     #Int Convert Error
     except ValueError:
-            print("\n\tSorry, Only Positive Number.")
+            print("\n\tSorry, Only Non-Negative Number.")
     #Assert Error
     except AssertionError:
-            print("\n\tSorry, Only Positive Number.")
+            print("\n\tSorry, Only Non-Negative Number.")
     #No Error
     else:
         break
 
 #Print Value
 print ("\n\nName: \t", name,"\nAge: \t", age)
-
 
 #Current Year
 now = datetime.now().year
@@ -56,10 +55,10 @@ while True:
         assert repeat_times >= 0
     #Int Convert Error
     except ValueError:
-        print("\n\tSorry, Only Positive Number.")
+        print("\n\tSorry, Only Non-Negative Number.")
     #Assert Error
     except AssertionError:
-        print("\n\tSorry, Only Positive Number.")
+        print("\n\tSorry, Only Non-Negative Number.")
     #No Error
     else:
         break
