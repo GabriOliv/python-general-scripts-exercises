@@ -8,12 +8,12 @@
 | ex_01.py | [1: Character Input][exerc001] |
 | ex_02.py | [2: Odd Or Even][exerc002] |
 | ex_03.py | [3: List Less Than Ten][exerc003] |
-
-[comment]: <> ( to do list
 | ex_04.py | [4: Divisors][exerc004] |
 | ex_05.py | [5: List Overlap][exerc005] |
 | ex_06.py | [6: String Lists][exerc006] |
 | ex_07.py | [7: List Comprehensions][exerc007] |
+
+[comment]: <> ( to do list
 | ex_08.py | [8: Rock Paper Scissors][exerc008] |
 | ex_09.py | [9: Guessing Game One][exerc009] |
 | ex_10.py | [10: List Overlap Comprehensions][exerc010] |
