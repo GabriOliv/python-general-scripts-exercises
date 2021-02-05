@@ -12,9 +12,9 @@
 | ex_05.py | [5: List Overlap][exerc005] |
 | ex_06.py | [6: String Lists][exerc006] |
 | ex_07.py | [7: List Comprehensions][exerc007] |
+| ex_08.py | [8: Rock Paper Scissors][exerc008] |
 
 [comment]: <> ( to do list
-| ex_08.py | [8: Rock Paper Scissors][exerc008] |
 | ex_09.py | [9: Guessing Game One][exerc009] |
 | ex_10.py | [10: List Overlap Comprehensions][exerc010] |
 | ex_11.py | [11: Check Primality Functions][exerc011] |
