@@ -13,11 +13,11 @@
 | ex_06.py | [6: String Lists][exerc006] |
 | ex_07.py | [7: List Comprehensions][exerc007] |
 | ex_08.py | [8: Rock Paper Scissors][exerc008] |
-
-[comment]: <> ( to do list
 | ex_09.py | [9: Guessing Game One][exerc009] |
 | ex_10.py | [10: List Overlap Comprehensions][exerc010] |
 | ex_11.py | [11: Check Primality Functions][exerc011] |
+
+[comment]: <> ( to do list
 | ex_12.py | [12: List Ends][exerc012] |
 | ex_13.py | [13: Fibonacci][exerc013] |
 | ex_14.py | [14: List Remove Duplicates][exerc014] |
