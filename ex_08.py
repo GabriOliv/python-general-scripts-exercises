@@ -1,6 +1,6 @@
 #!/usr/bin/env python3.8
 
-# 03
+# 08
 # Make a two-player Rock-Paper-Scissors game.
 #   (Hint: Ask for player plays (using input),
 #   compare them, print out a message of congratulations to the winner,
