@@ -1,8 +1,12 @@
 # python-general-scripts-exercises
 
-#### Python Exercises from [Practice Python](https://www.practicepython.org/)
-#
-#
+Some Python Scripts and Exercises 
+
+![Python Version](https://img.shields.io/badge/python-3.8-blue?logo=python)
+
+---
+
+### Python Exercises from [Practice Python](https://www.practicepython.org/)
 | Scripts | Exercises|
 | ------ | ------ |
 | ex_01.py | [1: Character Input][exerc001] |
