@@ -2,7 +2,7 @@
 
 Some Python Scripts and Exercises 
 
-![Python Version](https://img.shields.io/badge/python-3.8-blue?logo=python)
+[![Python Version](https://img.shields.io/badge/python-3.8-blue?logo=python)](https://www.python.org/downloads/)
 
 ---
 
