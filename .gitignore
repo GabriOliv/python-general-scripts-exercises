@@ -2,9 +2,10 @@
 env/
 
 # python pytest
+.coverage
+.env
 *.pyc
 __pycache__/
-.env
 /.pytest_cache/
 
 # vscode workspace

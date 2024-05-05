@@ -1,14 +1,6 @@
 import pytest
 import ex_01
 
-# [x] get_name
-# [x] get_age
-# [x] calculate_year_to_turn_100
-# [x] print_message
-# [x] get_message
-# [x] get_repeat_times
-# [x] repeat_message
-
 
 def test_get_name(monkeypatch):
 	monkeypatch.setattr('builtins.input', lambda _: 'John')
