@@ -2,11 +2,12 @@
 
 Some Python Scripts and Exercises 
 
-[![Python Version](https://img.shields.io/badge/python-3.8-blue?logo=python)](https://www.python.org/downloads/)
+[![Python Version](https://img.shields.io/badge/python-3.10-blue?logo=python)](https://www.python.org/downloads/)
 
 ---
 
-### Python Exercises from [Practice Python](https://www.practicepython.org/)
+## Python Exercises from [Practice Python](https://www.practicepython.org/)
+
 | Scripts | Exercises|
 | ------ | ------ |
 | ex_01.py | [1: Character Input][exerc001] |
@@ -86,3 +87,39 @@ Some Python Scripts and Exercises
 [exerc035]: <https://www.practicepython.org/exercise/2017/02/28/35-birthday-months.html>
 [exerc036]: <https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html>
 
+
+---
+
+## How install and run the scripts
+
+1. git clone the project
+2. cd into the project
+	```sh
+	cd python-general-scripts-exercises
+	```
+3. Start a venv (virtual environment)
+	```sh
+	python3.10 -m venv env
+	```
+4. Activate the venv
+	```sh
+	source env/bin/activate
+	```
+5. Install the requirements
+	```sh
+	pip3.10 install -r requirements.txt
+	```
+6. Run the tests
+	```sh
+	pytest
+	```
+7. If all pass, run the scripts
+	```sh
+	python3.10 NAME_OF_THE_SCRIPT.py
+	```
+8. To deactivate the venv
+	```sh
+	deactivate
+	```
+
+---
