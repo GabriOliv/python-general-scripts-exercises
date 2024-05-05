@@ -1,8 +1,8 @@
-#!/usr/bin/env python3.8
+#!/usr/bin/env python3.10
 
 # 01
 # Create a program that
-#     asks the user to enter their name and their age.
+#     Asks the user to enter their name and their age.
 #     Print out a message addressed to them that tells them the year that they will turn 100 years old.
 
 # Extras:
@@ -13,62 +13,70 @@
 
 from datetime import datetime
 
-#Input Name
-name = input("Enter your Name: ")
+# Main exercise
 
-#Input Age
-#Throw Exception
-while True:
-    try:
-        age = int(input("Enter your Age: "))
-        assert age >= 0
-    #Int Convert Error
-    except ValueError:
-            print("\n\tSorry, Only Non-Negative Number.")
-    #Assert Error
-    except AssertionError:
-            print("\n\tSorry, Only Non-Negative Number.")
-    #No Error
-    else:
-        break
+def get_name():
+	return input("Enter your Name: ")
 
-#Print Value
-print ("\n\nName: \t", name,"\nAge: \t", age)
+def get_age():
+	while True:
+		try:
+			age = int(input("Enter your Age: "))
+			assert age >= 0
+		except ValueError:
+			print("\n\tSorry, Only Non-Negative Number.")
+		except AssertionError:
+			print("\n\tSorry, Only Non-Negative Number.")
+		else:
+			return age
 
-#Current Year
-now = datetime.now().year
+def calculate_year_to_turn_100(age, now):
+	if age <= 100:
+		return (100 - age) + now
+	else:
+		return None
 
-#Calc Age
-if age <= 100:
-    print("\nYou will get 100 years old in ", ((100-age)+now), "\n")
-else:
-    print("\nYou already got 100 years old\n")
+def print_message(name, age, year_to_turn_100):
+	print("\n\nName: \t", name, "\nAge: \t", age)
+	if year_to_turn_100:
+		print("\nYou will get 100 years old in ", year_to_turn_100, "\n")
+	else:
+		print("\nYou already got 100 years old\n")
+	print()
 
-#Input Message
-msg = input("\nTalk a Message: ")
+# Extras
 
-#Input Repeat
-#Throw Exception
-while True:
-    try:
-        repeat_times = int(input("Times to Repeat: "))
-        assert repeat_times >= 0
-    #Int Convert Error
-    except ValueError:
-        print("\n\tSorry, Only Non-Negative Number.")
-    #Assert Error
-    except AssertionError:
-        print("\n\tSorry, Only Non-Negative Number.")
-    #No Error
-    else:
-        break
+def get_message():
+	return input("\nTalk a Message: ")
 
-#Jump Line
-print()
+def get_repeat_times():
+	while True:
+		try:
+			repeat_times = int(input("Times to Repeat: "))
+			assert repeat_times >= 0
+		except ValueError:
+			print("\n\tSorry, Only Non-Negative Number.")
+		except AssertionError:
+			print("\n\tSorry, Only Non-Negative Number.")
+		else:
+			return repeat_times
 
-#Repeat Message
-for x in range(repeat_times):
-    print("[ ", (x+1), " ]", "\t", msg)
+def repeat_message(message, repeat_times):
+	for x in range(repeat_times):
+		print("[ ", (x+1), " ]", "\t", message)
 
-#Jump Line
-print()
+# Main
+
+def main():
+	name = get_name()
+	age = get_age()
+	now = datetime.now().year
+	year_to_turn_100 = calculate_year_to_turn_100(age, now)
+	print_message(name, age, year_to_turn_100)
+
+	message = get_message()
+	repeat_times = get_repeat_times()
+	repeat_message(message, repeat_times)
+
+if __name__ == "__main__":
+	main()
