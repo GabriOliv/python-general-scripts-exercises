@@ -111,7 +111,7 @@ Some Python Scripts and Exercises
 	```
 6. Run the tests
 	```sh
-	pytest
+	clear; PWDEBUG=1 pytest -vx
 	```
 7. If all pass, run the scripts
 	```sh
