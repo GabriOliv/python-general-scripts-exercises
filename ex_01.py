@@ -19,14 +19,17 @@ def get_name():
 	return input("Enter your Name: ")
 
 def get_age():
+	invalid_inputs = 0
 	while True:
 		try:
 			age = int(input("Enter your Age: "))
 			assert age >= 0
-		except ValueError:
+		except (ValueError, AssertionError):
 			print("\n\tSorry, Only Non-Negative Number.")
-		except AssertionError:
-			print("\n\tSorry, Only Non-Negative Number.")
+			invalid_inputs += 1
+			if invalid_inputs == 3:
+				print("\n\tYou have reached the maximum number of invalid inputs. Exiting...")
+				exit()
 		else:
 			return age
 
@@ -50,14 +53,17 @@ def get_message():
 	return input("\nTalk a Message: ")
 
 def get_repeat_times():
+	invalid_inputs = 0
 	while True:
 		try:
 			repeat_times = int(input("Times to Repeat: "))
 			assert repeat_times >= 0
-		except ValueError:
+		except (ValueError, AssertionError):
 			print("\n\tSorry, Only Non-Negative Number.")
-		except AssertionError:
-			print("\n\tSorry, Only Non-Negative Number.")
+			invalid_inputs += 1
+			if invalid_inputs == 3:
+				print("\n\tYou have reached the maximum number of invalid inputs. Exiting...")
+				exit()
 		else:
 			return repeat_times
 
