@@ -122,4 +122,11 @@ Some Python Scripts and Exercises
 	deactivate
 	```
 
+### Run Coverage
+
+Run the coverage with pytest and show the missing lines
+```sh
+coverage run -m pytest; coverage report --show-missing
+```
+
 ---
