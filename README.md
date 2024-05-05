@@ -8,9 +8,9 @@ Some Python Scripts and Exercises
 
 ## Python Exercises from [Practice Python](https://www.practicepython.org/)
 
-| Scripts | Exercises|
-| ------ | ------ |
-| ex_01.py | [1: Character Input][exerc001] |
+| Scripts | Exercises | Tests |
+| :---: | :--- | :---: |
+| ex_01.py | [1: Character Input][exerc001] | ✅ |
 | ex_02.py | [2: Odd Or Even][exerc002] |
 | ex_03.py | [3: List Less Than Ten][exerc003] |
 | ex_04.py | [4: Divisors][exerc004] |
